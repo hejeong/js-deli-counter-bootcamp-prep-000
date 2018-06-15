@@ -20,11 +20,10 @@ function currentLine(line){
   }else{
     var outputString = "The line is currently: "
     for(var i = 0; i < length; i++){
-      if(i === length - 1){
         outputString += `${i+1}. ${line[i]}`
-      }else{
-        outputString += `${i+1}. ${line[i]}, `
-      }
+        if(i !== length){
+          outputString += ", "
+        }
     }
     return outputString
   }
