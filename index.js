@@ -12,3 +12,19 @@ function nowServing(line){
     return `Currently serving ${nextInLine}.`
   }
 }
+
+function currentLine(line){
+  var length = line.length
+  if(length === 0){
+    return "The line is currently empty."
+  }else{
+    var outputString = "The line is currently: "
+    for(var i = 0; i < length; i++){
+      if(i === length - 1){
+        outputString += `${i}. ${line[i]}`
+      }else{
+        outputString += `${i}. ${line[i]}, `
+      }
+    }
+  }
+}
