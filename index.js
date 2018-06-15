@@ -21,9 +21,9 @@ function currentLine(line){
     var outputString = "The line is currently: "
     for(var i = 0; i < length; i++){
       if(i === length - 1){
-        outputString += `${i}. ${line[i]}`
+        outputString += `${i+1}. ${line[i]}`
       }else{
-        outputString += `${i}. ${line[i]}, `
+        outputString += `${i+1}. ${line[i]}, `
       }
     }
     return outputString
